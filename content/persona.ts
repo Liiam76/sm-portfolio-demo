@@ -15,6 +15,8 @@ export const persona = {
     "I run social for Nigerian consumer brands, and I measure it in audience, sales and sentiment.",
   intro:
     "Five years across two agencies and one FMCG house. I plan the content, run the paid budget, staff the community desk and report on what moved the business.",
+  bannerNotice:
+    "Sample portfolio for a class demo. The person, every employer, brand, campaign and number on this site is invented.",
   sampleNotice:
     "This is a sample portfolio built for a class demo. The person, every employer, brand, campaign and number on this site is invented.",
   cvFile: "/amaka-oyelaran-cv.pdf",

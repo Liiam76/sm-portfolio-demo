@@ -13,7 +13,7 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
         Skip to content
       </a>
       <p className="no-print bg-[var(--ink)] px-4 py-2 text-center text-xs text-[var(--lime)] sm:text-sm">
-        Sample portfolio for a class demo. {persona.sampleNotice.split(". ").slice(1).join(". ")}
+        {persona.bannerNotice}
       </p>
       <SiteHeader />
       <main id="main" className="flex-1">{children}</main>
