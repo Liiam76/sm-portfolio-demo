@@ -22,7 +22,7 @@ export function PostTile({ c, className = "" }: Props) {
         className="absolute"
         style={{ background: accent, width: "22%", aspectRatio: "1", left: "8%", top: "17%", opacity: 0.9, borderRadius: "30%" }}
       />
-      <span className="absolute left-[8%] top-[6%] text-[6cqw] font-semibold tracking-wide opacity-80">
+      <span className="absolute left-[8%] top-[6%] text-[6cqw] font-semibold tracking-wide">
         {c.brand}
       </span>
       <p

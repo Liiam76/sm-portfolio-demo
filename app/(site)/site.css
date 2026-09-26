@@ -1,0 +1,31 @@
+.site {
+  --bg: oklch(0.7 0.2 40);
+  --ink: oklch(0.2 0.04 30);
+  --lime: oklch(0.92 0.2 118);
+  --paper: oklch(0.985 0.008 40);
+  --paper-ink: oklch(0.28 0.03 30);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(var(--r, 0deg)); }
+  50% { transform: translateY(-10px) rotate(var(--r, 0deg)); }
+}
+.float { animation: float 6s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .float { animation: none; }
+}
+
+.site :focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 3px;
+}
+.on-dark :focus-visible { outline-color: var(--lime); }
+
+@media print {
+  .no-print { display: none !important; }
+}
+
+@page {
+  size: A4;
+  margin: 14mm;
+}

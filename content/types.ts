@@ -45,4 +45,6 @@ export type Testimonial = {
   company: string;
 };
 
-export type Service = { name: string; body: string };
+export type Service = { name: string; body: string; deliverables: string[]; measuredBy: string };
+
+export type Principle = { name: string; body: string };
