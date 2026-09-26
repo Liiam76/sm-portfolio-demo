@@ -1,11 +1,11 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { cases } from "../content/cases.ts";
-import { persona, roles, testimonials, services } from "../content/persona.ts";
+import { persona, roles, testimonials, services, story, principles } from "../content/persona.ts";
 import { audienceGained, totalSpend, describeGrowth, headlineFigures } from "../lib/metrics.ts";
 import { pctChange, compact, naira } from "../lib/format.ts";
 
-const allText = JSON.stringify({ cases, persona, roles, testimonials, services });
+const allText = JSON.stringify({ cases, persona, roles, testimonials, services, story, principles });
 
 test("audience gained sums the first growth metric of follower cases", () => {
   assert.equal(audienceGained(), 167_400);
